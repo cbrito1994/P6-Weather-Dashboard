@@ -12,39 +12,51 @@
     <header>
         <h3>Weather Dashboard</h3>
     </header>
-    <aside>
-        <div class="citySearch">
-            <h3>Search for a city</h3>
-            <form>
-                <input type="text" placeholder="City">
-                <button>Search</button>
-            </form>
-        </div>
-        <br>
-        <div class="searchedCities">
-            <button>Austin</button>
-        </div>
-    </aside>
     <main>
-        <section>
-            <h3>City and Date</h3>
-            <p>Temp: 74.01</p>
-            <p>Wind: 6.67</p>
-            <p>humidity: 46%</p>
-            <p>UV Index:<span>0.47</span></p>
-        </section>
-        <section>
-            <h4>5-Day Forecast:</h4>
-            <div class="forecastInfo">
-                <div class="forecastInfo__container">
-                    <h5>Date</h5>
-                    <img src="" alt="Weather Icon">
-                    <p>Temp:<span>73.72</span></p>
-                    <p>Wind:<span>9.53</span></p>
-                    <p>Humidity:<span>66%</span></p>
-                </div>
+        <aside>
+            <div class="citySearch">
+                <h1>Search for a city</h1>
+                <form>
+                    <input type="text" placeholder="City">
+                    <button>Search</button>
+                </form>
             </div>
-        </section>
+            <br>
+            <hr>
+            <br>
+            <div class="searchedCities">
+                <button>Austin</button>
+            </div>
+        </aside>
+        <div>
+            <section class="searchDetails__city">
+                <h3>City and Date</h3>
+                <br>
+                <p>Temp: 74.01</p>
+                <br>
+                <p>Wind: 6.67</p>
+                <br>
+                <p>Humidity: 46%</p>
+                <br>
+                <p>UV Index: <span>0.47</span></p>
+            </section>
+            <section class="searchDetails__forecast">
+                <h2>5-Day Forecast:</h2>
+                <div class="forecastInfo">
+                    <div class="forecastInfo__container">
+                        <h3>Date</h3>
+                        <br>
+                        <img src="" alt="Weather Icon">
+                        <br>
+                        <p>Temp:<span>73.72</span></p>
+                        <br>
+                        <p>Wind:<span>9.53</span></p>
+                        <br>
+                        <p>Humidity:<span>66%</span></p>
+                    </div>
+                </div>
+            </section>
+        </div>
     </main>
 </body>
 </html>

@@ -9,6 +9,42 @@
     <script src="app.js" defer></script>
 </head>
 <body>
-    
+    <header>
+        <h3>Weather Dashboard</h3>
+    </header>
+    <aside>
+        <div class="citySearch">
+            <h3>Search for a city</h3>
+            <form>
+                <input type="text" placeholder="City">
+                <button>Search</button>
+            </form>
+        </div>
+        <br>
+        <div class="searchedCities">
+            <button>Austin</button>
+        </div>
+    </aside>
+    <main>
+        <section>
+            <h3>City and Date</h3>
+            <p>Temp: 74.01</p>
+            <p>Wind: 6.67</p>
+            <p>humidity: 46%</p>
+            <p>UV Index:<span>0.47</span></p>
+        </section>
+        <section>
+            <h4>5-Day Forecast:</h4>
+            <div class="forecastInfo">
+                <div class="forecastInfo__container">
+                    <h5>Date</h5>
+                    <img src="" alt="Weather Icon">
+                    <p>Temp:<span>73.72</span></p>
+                    <p>Wind:<span>9.53</span></p>
+                    <p>Humidity:<span>66%</span></p>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>

@@ -5,7 +5,7 @@
 header {
     padding: 20px 0px;
     text-align: center;
-    background-color: blue;
+    background: linear-gradient(to right, rgb(89, 0, 255), rgba(38, 17, 95, 0.938));
     color: white;
     font-size: 20px;
 }
@@ -50,6 +50,8 @@ main aside {
 .searchedCities {
     display: flex;
     flex-direction: column;
+    height: 360px;
+    overflow: auto;
 }
 
 .searchedCities button {

@@ -73,6 +73,11 @@ main > div {
     margin-bottom: 18px;
 }
 
+.searchDetails__city h3 {
+    display: flex;
+    align-items: center;
+}
+
 .searchDetails__city span {
     background-color: green;
     padding: 4px 14px;

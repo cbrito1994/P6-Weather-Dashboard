@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Dashboard</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
     <link rel="stylesheet" href="styles.css">
     <script src="app.js" defer></script>
 </head>
@@ -16,7 +17,7 @@
         <aside>
             <div class="citySearch">
                 <h1>Search for a city</h1>
-                <form>
+                <form class="citySearch__form">
                     <input type="text" placeholder="City">
                     <button>Search</button>
                 </form>
@@ -32,13 +33,13 @@
             <section class="searchDetails__city">
                 <h3>City and Date</h3>
                 <br>
-                <p>Temp: 74.01</p>
+                <p>Temp: --</p>
                 <br>
-                <p>Wind: 6.67</p>
+                <p>Wind: --</p>
                 <br>
-                <p>Humidity: 46%</p>
+                <p>Humidity: --</p>
                 <br>
-                <p>UV Index: <span>0.47</span></p>
+                <p>UV Index: <span>--</span></p>
             </section>
             <section class="searchDetails__forecast">
                 <h2>5-Day Forecast:</h2>

@@ -20,8 +20,10 @@ main {
 }
 
 main aside {
+    display: flex;
+    flex-direction: column;
     flex-basis: 30%;
-    padding: 14px 20px 14px 6px;
+    padding: 14px 20px 0px 6px;
 }
 
 .citySearch form input {
@@ -50,11 +52,11 @@ main aside {
 .searchedCities {
     display: flex;
     flex-direction: column;
-    height: 360px;
+    max-height: 300px;
     overflow: auto;
 }
 
-.searchedCities button {
+.searchedCities button, aside > button {
     padding: 8px 0px;
     background-color: grey;
     border: none;

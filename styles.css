@@ -56,7 +56,16 @@ main aside {
     overflow: auto;
 }
 
-.searchedCities button, aside > button {
+.searchedCities button {
+    padding: 8px 0px;
+    background-color: rgb(250, 199, 106);
+    border: none;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    outline: none;
+}
+
+aside > button {
     padding: 8px 0px;
     background-color: grey;
     border: none;

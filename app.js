@@ -58,3 +58,28 @@ const showMainResults = (data, name) => {
     mainInfo.innerHTML = mainInfoText;
 }
 
+const getForecast = (data) => {
+    forecastInfo.innerHTML = "";
+    for(i = 1; i < 6; i++){
+        let date = new Date(data.daily[i].dt * 1000).toLocaleDateString("en-US");
+        let icon = data.daily[i].weather[0].icon;
+        let temperature = data.daily[i].temp.min;
+        let wind = data.daily[i].wind_speed;
+        let humidity = data.daily[i].humidity;
+        let forecast = `
+            <div class="forecastInfo__container">
+                <h3>${date}</h3>
+                <br>
+                <img src="http://openweathermap.org/img/wn/${icon}.png" alt="Weather Icon">
+                <br>
+                <p>Temp: ${temperature} F</p>
+                <br>
+                <p>Wind: ${wind} MPH</p>
+                <br>
+                <p>Humidity: ${humidity}%</p>
+            </div>
+        `
+        forecastInfo.insertAdjacentHTML('beforeend', forecast)
+    }
+}
+

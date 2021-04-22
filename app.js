@@ -83,3 +83,10 @@ const getForecast = (data) => {
     }
 }
 
+const addedResults = (formValue) => {
+    searchesData.push(formValue);
+    localStorage.setItem("searches", JSON.stringify(searchesData));
+    searchedCities.innerHTML = "";
+    loadPreviousResults()
+}
+

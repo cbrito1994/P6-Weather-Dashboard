@@ -98,3 +98,9 @@ const loadPreviousResults = () => {
     }
 }
 
+const clearResults = () => {
+    localStorage.removeItem("searches");
+    searchedCities.innerHTML = "";
+    searchesData = [];
+}
+

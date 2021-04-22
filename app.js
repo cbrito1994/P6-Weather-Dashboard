@@ -104,3 +104,4 @@ const clearResults = () => {
     searchesData = [];
 }
 
+loadPreviousResults();

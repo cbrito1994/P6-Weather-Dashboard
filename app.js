@@ -37,3 +37,24 @@ const getLatLong = (data) => {
     })
 }
 
+const showMainResults = (data, name) => {
+    let mainInfoText = "";
+    let currentDate = moment().format('l');
+    let icon = data.current.weather[0].icon;
+    let temperature = data.current.temp;
+    let wind = data.current.wind_speed;
+    let humidity = data.current.humidity;
+    let uvindex = data.current.uvi;
+    mainInfoText += `
+        <h3>${name} (${currentDate}) <img src="http://openweathermap.org/img/wn/${icon}.png" alt="Weather Icon"></h3>
+        <p>Temp: ${temperature} F</p>
+        <br>
+        <p>Wind: ${wind} MPH</p>
+        <br>
+        <p>Humidity: ${humidity} %</p>
+        <br>
+        <p>UV Index: <span>${uvindex}</span></p>
+    `
+    mainInfo.innerHTML = mainInfoText;
+}
+

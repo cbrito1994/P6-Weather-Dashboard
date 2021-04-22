@@ -23,3 +23,17 @@ inputForm.addEventListener('submit', (e) => {
     });
 })
 
+const getLatLong = (data) => {
+    let name = data.name;
+    fetch(`${forecastURL}?lat=${data.coord.lat}&lon=${data.coord.lon}&appid=97995bc3fc9cc4a0a94493a6cb9c1d92`).then(response => {
+        if(response.ok){
+            return response.json();
+        }
+    }).then(data => {
+        showMainResults(data, name);
+        getForecast(data);
+    }).catch(err => {
+        alert(err)
+    })
+}
+

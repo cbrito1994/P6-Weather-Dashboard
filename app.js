@@ -4,3 +4,4 @@ const inputForm = document.querySelector('.citySearch__form');
 const mainInfo = document.querySelector('.searchDetails__city');
 const searchedCities = document.querySelector('.searchedCities');
 const forecastInfo = document.querySelector('.forecastInfo');
+let searchesData = JSON.parse(localStorage.getItem("searches")) || [];

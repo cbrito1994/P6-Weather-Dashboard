@@ -17,3 +17,4 @@ Below the input, there is a section where you can see all the previous places fr
 In case you wish to erase all the saved places you looked for, you can do it by pressing the clear locations button.
 
 ## Link to the app
+https://cbrito1994.github.io/P6-Weather-Dashboard/

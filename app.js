@@ -90,3 +90,11 @@ const addedResults = (formValue) => {
     loadPreviousResults()
 }
 
+const loadPreviousResults = () => {
+    for(i = 0; i < searchesData.length; i++){
+        let button = document.createElement("button");
+        button.innerHTML = searchesData[i];
+        searchedCities.appendChild(button);
+    }
+}
+
